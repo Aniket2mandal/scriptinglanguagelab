@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>positive</title>
+</head>
+
+<body>
+    <form>
+
+        number:<input type="text" id="positive" name="positive">
+        <input type="submit" value="submit" onclick="checkpositive()">
+    </form>
+    <script>
+        function checkpositive() {
+            var num = document.getElementById("positive").value;
+            if (num > 0) {
+                document.write("it is positive");
+            }
+            else if (num < 0) {
+                document.write("it is negative")
+            }
+            else {
+                document.write("it is zero");
+            }
+        }
+    </script>
+</body>
+
+</html>

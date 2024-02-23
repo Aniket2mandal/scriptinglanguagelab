@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            number
+        </title>
+    </head>
+    <body>
+        number:<input type="text" id="number" name="number">
+        <input type="submit" value="submit" onclick="checknumber()">
+        <script>
+            function checknumber(){
+            var num=document.getElementById("number").value;
+            if(isNaN(num)!=true){
+                document.write("it is number");
+            }
+            else{
+                document.write("it is not number");
+            }
+        }
+        </script>
+    </body>
+</html>

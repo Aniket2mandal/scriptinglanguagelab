@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>greaterthree</title>
+</head>
+
+<body>
+    <form>
+
+        first number:<input type="text" id="greater" name="greater"><br>
+        second number:<input type="text" id="smaller" name="smaller"><br>
+        third number:<input type="text" id="small" name="small">
+        <input type="submit" value="submit" onclick="checkgreater1()">
+    </form>
+    <script>
+
+        function checkgreater1() {
+            let num = document.getElementById("greater").value;
+            let num1 = document.getElementById("smaller").value;
+            let num2 = document.getElementById("small").value;
+            let greater=Math.max(num,num1,num2);
+            // document.write(greater+"is greater");
+            return greater;
+            // if(num>num1 && num>num2){
+            // document.write(num+"is greater");
+            // }
+            // else if(num1>num && num1>num2){
+            //   document.write  (num1+" is greater");
+            // }
+            // else{
+            //     document.write (num2+"is greater");
+            // }
+            // let greaternumber = Math.max(num, num1, num2);
+            // document.write(greaternumber + ": is greater number among all");
+        }
+        // console.log(checkgreater(a));
+    </script>
+</body>
+
+</html>

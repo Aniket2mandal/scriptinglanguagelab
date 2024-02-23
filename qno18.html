@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>validation</title>
+</head>
+
+<body>
+    <form>
+        name:<input type="text" id="name" name="name">
+        email:<input type="email" id="email" name="email">
+        password:<input type="password" id="password" name="password">
+
+        <p id="error">
+            <input type="submit" value="submit" onclick="validation()">
+    </form>
+    <script>
+
+        function validation() {
+            var pattern = "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$";
+            var nam = document.getElementById("name").value;
+            var emai = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            if (nam == "" || emai == "" || pass == "") {
+                
+                alert("you haven't filled all info");
+            }
+            else {
+                alert("sucessfully submitted");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

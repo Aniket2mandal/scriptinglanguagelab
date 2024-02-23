@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>greater</title>
+</head>
+
+<body>
+    <form>
+
+        first number:<input type="text" id="greater">
+        second number:<input type="text" id="smaller" >
+        <input type="submit" value="submit" onclick="checkgreater()">
+    </form>
+    <script>
+        function checkgreater() {
+            let num = document.getElementById("greater").value;
+            let numm = document.getElementById("smaller").value;
+            
+            // if (num > numm) {
+            //     document.write(num + "is greater");
+            // }
+            // else {
+            //     document.write(numm + " is greater");
+            // }
+            let a=Math.max(num,numm);
+            document.write(a+"is greater");
+          
+        }
+    </script>
+</body>
+
+</html>

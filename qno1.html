@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>odd/even</title>
+</head>
+
+<body>
+
+    <form>
+        <!-- <label for ="number">Number:</label> -->
+        number: <input type="text" id="oddeven" name="oddeven">
+        <input type="submit" value="submit" onclick()="odd()">
+    </form>
+    <!-- <script src="odd.js"></script> -->
+    <script>
+        function odd() {
+            //var num = document.getElementById("odd").addEventListener("click",odd);
+
+            var num = document.getElementById("oddeven").value;
+            if (num % 2 == 0) {
+                document.write("is even");
+            }
+            else {
+                document.write("is odd");
+            }
+        }
+        // console.log(odd(num));
+
+    </script>
+</body>
+
+</html>

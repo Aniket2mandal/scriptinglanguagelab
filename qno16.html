@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qno16</title>
+</head>
+
+<body>
+    <form>
+        enter the marks:
+        <input type="text" id="mark"><br>
+        <h id="result">
+
+            <input type="submit" value="grade" onclick="grade()">
+    </form>
+    <script>
+        function grade() {
+            let a = document.getElementById("mark").value;
+            // document.write(a);
+          
+            switch (a==true) {
+                case (a >= 90 && a < 100):
+                    document.getElementById("result").innerHTML = "grade A+";
+                    //document.write("grade A+");
+                    break;
+
+                case (a >= 80 && a < 90):
+                    document.getElementById("result").innerHTML = "grade A";
+                    // document.write("grade A");
+                    break;
+
+                case (a >= 70 && a < 80):
+                    document.getElementById("result").innerHTML = "grade B+";
+                    //document.write("grade B+");
+                    break;
+
+                case (a >= 60 && a < 70):
+                    document.getElementById("result").innerHTML = "grade B";
+                    //document.write("grade B");
+                    break;
+                case (a >= 50 && a < 60):
+                    document.getElementById("result").innerHTML = "grade C";
+                    // document.write("grade C");
+                    break;
+                case ( a < 50):
+                    document.getElementById("result").innerHTML = "grade D";
+                    // document.write("grade D");
+                    break;
+            
+        }
+
+         }
+    </script>
+</body>
+
+</html>

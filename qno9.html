@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>arithmetic</title>
+    </head>
+    <body>
+        <form type="post">
+            number1:<input type="text" id="add" name="add">
+            number2:<input type="text" id="num2" name="sub">
+            <input type="submit" value="submit" onclick="arithmetic()">
+        </form>
+        <script>
+            function arithmetic(){
+                // alert('hi');
+                let num1=document.getElementById("add").value;
+                // console.log(num1);
+                document.write(num1);
+              
+               let number=document.getElementById("num2").value;
+               document.write(number);
+                // console.log(num2);
+                
+                let sum=parseInt(num1)+ParseInt(num2);
+                document.write(sum);
+                let sub=num1-num2;
+                document.write(sub);
+                let mul=(num1)*(num2);
+                document.write(mul);
+                let div=(num1)/(num2);
+                document.write(div);
+                let mod=(num1)%(num2);
+                document.write(mod);
+                let pow=num1**2;
+                document.write(pow);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>grade</title>
+</head>
+
+<body>
+    <h1>hello friends</h1>
+    <h1 id="demo" onmouseover="mouseOver()">hello</h1>
+    <form>
+        math:<input type="number" id="grade" name="grade">
+        science:<input type="number" id="grade1" name="grade1">
+        computer:<input type="number" id="grade1" name="grade1">
+        <input type="submit" value="submit" onclick="checkgrade()" >
+    </form>
+    <script>
+        function checkgrade() {
+            let g = document.getElementById("grade").value;
+            let g1 = document.getElementById("grade1").value;
+            let g2 = document.getElementById("grade1").value;
+          let T= parseInt(g)+parseInt(g1)+parseInt(g2);
+          let p= (T/300)*100;
+          document.write("Total marks "+p   );
+          let v= p/25;
+         document.write(v);
+        }
+        // function mouseOver(){
+        //     document.getelementById("demo").style.color="red";
+        // }
+    </script>
+</body>
+
+</html>
